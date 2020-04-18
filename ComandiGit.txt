@@ -93,3 +93,9 @@ $ notepad++ list.txt // il file risulta non cambiato
 
 
 
+QUINDI CAPITO L'UTILITA A UN CERTO PUNTO DEVO FONDERE LE DUE BRANCH IN MASTER
+PER FARLO PRIMA ENTRO IN MASTER
+$ git checkout master
+POI FACCIO IL MERGE
+$ git merge meat  // controlla che ha aggiunto meat
+$ git merge DAIRY // CONTROLLA CHE HA AGGIUNTO DAIRY
