@@ -14,7 +14,9 @@ Egg
 Milk
 
 Meat 
-
+Sausages
+Steak 
+Filetto
 
 
 Pet
