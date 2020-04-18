@@ -1,0 +1,15 @@
+Primo file per prove su git 
+
+Fruit
+
+Vegetables
+
+Dairy
+
+
+Meat 
+
+
+
+Pet
+
