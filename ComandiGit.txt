@@ -1,0 +1,18 @@
+innanzitutto entra in una directory e fai 
+git init // crea un repository
+ls -A // mostra tutti i file che git crea
+
+
+git help NomeComando
+
+git config --global user.name "Nome da usare"
+
+git config --global user.email "mail@daUsare.com" // quella che usi su git-hub.com
+
+touch nomefile.txt    // per creare un nuovo file
+
+git config --global core.editor notepad++  // per decidere quale editor usare
+
+git status   //  mostra se ci sono delle cose aggiunte ma non ancora prese in considerazione
+
+git add NomeFile.txt // dice di fare Track del NomeFile.txt

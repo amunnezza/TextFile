@@ -1,6 +1,10 @@
 Primo file per prove su git 
 
 Fruit
+Pepperoni 
+Orange
+Bananas
+Avocado
 
 Vegetables
 
