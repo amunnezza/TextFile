@@ -16,3 +16,6 @@ git config --global core.editor notepad++  // per decidere quale editor usare
 git status   //  mostra se ci sono delle cose aggiunte ma non ancora prese in considerazione
 
 git add NomeFile.txt // dice di fare Track del NomeFile.txt
+
+//nota bene tra modifica del file e il comnado git add nomeFile.txt posso fare
+git diff   // mi dice quale è la differenza rispetto a quello gia in stage o in commit
