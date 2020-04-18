@@ -99,3 +99,18 @@ $ git checkout master
 POI FACCIO IL MERGE
 $ git merge meat  // controlla che ha aggiunto meat
 $ git merge DAIRY // CONTROLLA CHE HA AGGIUNTO DAIRY
+
+
+
+GIT HUD 
+
+crea un repository su git-hub.com
+per es. TextFile
+e SINCRONIZZA IL NOSTRO REPOSITORY CON QUELLO SUL GIT HUB USANDO REMOTE 
+
+$ git remote add origin "https://github.com/amunnezza/TextFile.git"   // LEGGERE 	git help remote
+// CREATO UN ALIAS origin per l'url scritto
+// se faccio 
+& git remote -v // mi da l'url del repository remoto
+// a questo punto posso FARE IL PUSH DEL REPOSITORY
+$ git push origin master  // da dovE? origin che è un alias Che cosa? il branch master
