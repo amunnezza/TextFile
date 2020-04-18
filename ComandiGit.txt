@@ -19,3 +19,23 @@ git add NomeFile.txt // dice di fare Track del NomeFile.txt
 
 //nota bene tra modifica del file e il comnado git add nomeFile.txt posso fare
 git diff   // mi dice quale è la differenza rispetto a quello gia in stage o in commit
+
+
+nota bene la gestione dei commit puoi farla 
+gitk --all // interfaccia grafica carina e funzionante
+
+$ git log // mostra tutti i log
+$ git log -1 // mostra solo l'ultimo
+
+// se cambi il file e poi 
+$ git add nomeFile.txt
+ 
+$ git status // ti dice non ancora commitato
+ 
+// ora git diff  NON ti da nulla!!
+// Perchè non cì sono differenxe tra il file in lavorazione e quello in stage!!
+// ma facendo 
+$ git diff --staged   // mostra differenze tra file staged e quello gia committato
+
+// nota bene posso vedere differenze tra i vari commit 
+
