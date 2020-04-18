@@ -63,4 +63,33 @@ git reset HEAD~1   // il file cambiato sbagliato rimane in staging
 git reset HEAD~1 --mixed // il file cambiato viene tolto dallo staging ma le modifiche rimandono sul file sys
 git reset HEAD~1 --hard // come mixed ma cambia anche il file sul file sys
 
+BRANCH
+	Creiamo due ulteriori branch uno per dairy e l'altro per meat
+	IL VANTAGGIO EVIDENTE E CHE POSSO AVERE DUE TEAM CHE LAVORANO SU PARTI DIVERSE ANCHE DELLO STESSO FILE 
+	SENZA DARSI FASTIDIO. PER ESEMPIO SUPPONIAMO DI AVER UN TEAM CHE LAVORA SULLA PARTE DAIRY 	E UN ALTRO SULLA
+	PATE MEAT. ALLORA 	
+$ git branch ( mi dice quali branch ci sono e quello attivo al momneto)
+//IN PRIMA ISTANZA HO SOLO *master con asterisco che MI DICE QUALE E QUELLO ATTIVO
+git branch meat // crea il branch meat
+git branch dairy // crea il branch dairy
+// POI MI SPOSTO SUL BRANCH AD ES. DAIRY
+git checkout DAIRY
+// E MENTRE SONO SU DAIRY modifico list.txt aggiungendo qualcosa sotto dairy ad es. milk , egg ecc. 
+// add e commit 
+$git add list.txt
+$ git commit -m "aggiunte voci a dairy"  //MA E COMMIT VISUALIZZABILE SOOLO DAL BRANCH DAIRY 
+// SE TORNO SU MASTER O SULL'ALTRO BRANCH LE MODIFICHE NON SONO VISIBILI
+// INFATTI FACENDO 
+$ git checkout master // se controlo list.txt le modifiche fatte in BRANCH dairy non sono visibili
+/// ANALOGAMENTE SU MEAT POSSO FARE
+$ git checkout MEAT
+$ notepad++ list.txt
+// AGGIUNGO DELLE VOCI IN MEAT
+	git add list.txt
+	git commit -m "aggiunta della carne"
+// ache qui se torno in branch master 
+$ git checkout master
+$ notepad++ list.txt // il file risulta non cambiato
+
+
 
