@@ -9,7 +9,9 @@ Avocado
 Vegetables
 
 Dairy
-
+Butter
+Egg
+Milk
 
 Meat 
 
