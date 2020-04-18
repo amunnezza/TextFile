@@ -52,5 +52,15 @@ OPPURE TORNARE ALLA PRINCIPALE INIZIALE CON
 git checkout HEAD list.txt
 
 
+// SA FACCIO DEGLI ERRORI SUI FILE POSSO TORNARE INDIETRO 
+// SUPPONGO DI AVERE AGGIUNTO QUALCOSA DI SBABLIATO SU list.txt  E HO GIA FATTO
+git add list.txt
+git commit -m "ho fatto qui errore"
+
+PER CORREGERE
+
+git reset HEAD~1   // il file cambiato sbagliato rimane in staging
+git reset HEAD~1 --mixed // il file cambiato viene tolto dallo staging ma le modifiche rimandono sul file sys
+git reset HEAD~1 --hard // come mixed ma cambia anche il file sul file sys
 
 
