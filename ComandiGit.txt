@@ -38,4 +38,19 @@ $ git status // ti dice non ancora commitato
 $ git diff --staged   // mostra differenze tra file staged e quello gia committato
 
 // nota bene posso vedere differenze tra i vari commit 
+CON IL COMANDO
+git diff "hash del commit che mi interessa"
+PER FARLO USO IL CONCETTO DI "HEAD" CHE SI VEDE NEL git log . 	HEAD E' L'ULTIMO COMMIT VALIDO E PER 
+TORNARE AD UNO STADIO PRECEDENTE PUOI FARE 	
+git checkout~3 (torna indietro di tre) 
+
+
+PER TORNARE INDIETRO SU UN SINGOLO FILE PUOI FARE
+git checkout HEAD~3 list.txt
+
+OPPURE TORNARE ALLA PRINCIPALE INIZIALE CON 
+git checkout HEAD list.txt
+
+
+
 
