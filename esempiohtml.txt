@@ -1,0 +1,90 @@
+<div style="background-color:#DAE0E6; font-family:sans-serif; padding:20px;">
+  <h1 style="text-align:center; font-size:32px;">
+    ll cc's Cool Reddit
+  </h1>
+  <section>
+    <ul style="list-style:none; padding:0px">
+      
+        <li style="display:flex;border:1px solid gray; background-color: white;">
+          <a href="http://reddit.com/r/aww/comments/g42mru/a_tiny_newly_born_turtle_seeing_the_world_for_the/" target="_blank" rel="noopener noreferrer">
+            <div style="margin:10px; margin-left:20px; min-width:120px; border-radius:5%; height: 80px; border:1px solid black;
+                        background-repeat: no-repeat; background-position:center; background-image: url(https://b.thumbs.redditmedia.com/XThtcxyBggTb3l5OHtdH-TkfOX6z5ZviOhZV4nVBu-Q.jpg)" >
+            </div>
+          </a>
+          <div style="display:flex; flex-direction:column;margin: auto; margin-left: 30px">
+            <a style="text-decoration:none;font-size:20px; margin-bottom: 10px" href="http://reddit.com/r/aww/comments/g42mru/a_tiny_newly_born_turtle_seeing_the_world_for_the/" target="_blank" rel="noopener noreferrer">
+              A tiny, newly born turtle, seeing the world for the first time
+            </a>
+            <span style="font-weight:bold;">/r/aww
+              <span style="color:gray;font-weight:normal;margin-left:5px;">Posted on Apr 19, 2020 2:00pm</span>
+            </span>
+          </div>
+        </li>
+      
+        <li style="display:flex;border:1px solid gray; background-color: white;">
+          <a href="http://reddit.com/r/aww/comments/g3y1q1/babys_first_queso/" target="_blank" rel="noopener noreferrer">
+            <div style="margin:10px; margin-left:20px; min-width:120px; border-radius:5%; height: 80px; border:1px solid black;
+                        background-repeat: no-repeat; background-position:center; background-image: url(https://b.thumbs.redditmedia.com/RJ3BAv4Gkc1Odpn90fdWKEN-ePm9EVTm6iyMsOmnADc.jpg)" >
+            </div>
+          </a>
+          <div style="display:flex; flex-direction:column;margin: auto; margin-left: 30px">
+            <a style="text-decoration:none;font-size:20px; margin-bottom: 10px" href="http://reddit.com/r/aww/comments/g3y1q1/babys_first_queso/" target="_blank" rel="noopener noreferrer">
+              Baby's first queso!
+            </a>
+            <span style="font-weight:bold;">/r/aww
+              <span style="color:gray;font-weight:normal;margin-left:5px;">Posted on Apr 19, 2020 8:13am</span>
+            </span>
+          </div>
+        </li>
+      
+        <li style="display:flex;border:1px solid gray; background-color: white;">
+          <a href="http://reddit.com/r/aww/comments/g3xab3/blind_girl_and_her_cat/" target="_blank" rel="noopener noreferrer">
+            <div style="margin:10px; margin-left:20px; min-width:120px; border-radius:5%; height: 80px; border:1px solid black;
+                        background-repeat: no-repeat; background-position:center; background-image: url(https://a.thumbs.redditmedia.com/nYa8KrYrVxuU-xquvXO4t89Dz2ru-zcLMLrpLImBXV4.jpg)" >
+            </div>
+          </a>
+          <div style="display:flex; flex-direction:column;margin: auto; margin-left: 30px">
+            <a style="text-decoration:none;font-size:20px; margin-bottom: 10px" href="http://reddit.com/r/aww/comments/g3xab3/blind_girl_and_her_cat/" target="_blank" rel="noopener noreferrer">
+              Blind girl and her cat
+            </a>
+            <span style="font-weight:bold;">/r/aww
+              <span style="color:gray;font-weight:normal;margin-left:5px;">Posted on Apr 19, 2020 7:24am</span>
+            </span>
+          </div>
+        </li>
+      
+        <li style="display:flex;border:1px solid gray; background-color: white;">
+          <a href="http://reddit.com/r/aww/comments/g3t6nt/caturday_nap/" target="_blank" rel="noopener noreferrer">
+            <div style="margin:10px; margin-left:20px; min-width:120px; border-radius:5%; height: 80px; border:1px solid black;
+                        background-repeat: no-repeat; background-position:center; background-image: url(https://a.thumbs.redditmedia.com/qVC_Qo9rcqevtrI17d3TmcHjJzcM1pJXTER7lto0BG8.jpg)" >
+            </div>
+          </a>
+          <div style="display:flex; flex-direction:column;margin: auto; margin-left: 30px">
+            <a style="text-decoration:none;font-size:20px; margin-bottom: 10px" href="http://reddit.com/r/aww/comments/g3t6nt/caturday_nap/" target="_blank" rel="noopener noreferrer">
+              Caturday nap.
+            </a>
+            <span style="font-weight:bold;">/r/aww
+              <span style="color:gray;font-weight:normal;margin-left:5px;">Posted on Apr 19, 2020 3:15am</span>
+            </span>
+          </div>
+        </li>
+      
+        <li style="display:flex;border:1px solid gray; background-color: white;">
+          <a href="http://reddit.com/r/aww/comments/g42j8m/chihuahua_puppy_is_too_cute_for_little_boy_to/" target="_blank" rel="noopener noreferrer">
+            <div style="margin:10px; margin-left:20px; min-width:120px; border-radius:5%; height: 80px; border:1px solid black;
+                        background-repeat: no-repeat; background-position:center; background-image: url(https://b.thumbs.redditmedia.com/PgZLCf_dZjcw2jLVHulLQCL0bk1fHdmn70q1XZ6ZR9w.jpg)" >
+            </div>
+          </a>
+          <div style="display:flex; flex-direction:column;margin: auto; margin-left: 30px">
+            <a style="text-decoration:none;font-size:20px; margin-bottom: 10px" href="http://reddit.com/r/aww/comments/g42j8m/chihuahua_puppy_is_too_cute_for_little_boy_to/" target="_blank" rel="noopener noreferrer">
+              Chihuahua puppy is too cute for little boy to handle
+            </a>
+            <span style="font-weight:bold;">/r/aww
+              <span style="color:gray;font-weight:normal;margin-left:5px;">Posted on Apr 19, 2020 1:51pm</span>
+            </span>
+          </div>
+        </li>
+      
+    </ul>
+  </section>
+</div>

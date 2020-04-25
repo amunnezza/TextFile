@@ -1,0 +1,82 @@
+
+
+1)installate le due macchine virtuali con vagrant 
+2) impostata la tastiera italiana con 
+#localctl set-keymap it2
+
+3 )Updating VirtualBox guest additions via cli on CentOS
+
+1 min read
+
+My virtualbox installation became out of date with the installed guest additions on my CentOS vm.  Here's how to update the guest additions via cli.
+First, find the version of virtualbox you have installed, mine is currently 5.0.10
+Then you can find the url to the guest addtions iso in the virtualbox download directory: http://download.virtualbox.org/virtualbox
+My version is found at http://download.virtualbox.org/virtualbox/5.0.10/VBoxGuestAdditions_5.0.10.iso
+Boot up the VM and ssh in.  Then download the guest additions iso and mount it.
+
+cd /opt
+sudo wget http://download.virtualbox.org/virtualbox/5.0.10/VBoxGuestAdditions_5.0.10.iso -O VBoxGuestAdditions_5.0.10.iso
+sudo mount VBoxGuestAdditions_5.0.10.iso  -o loop /mnt
+cd /mnt
+
+The next step is to run the installer, however when I did it it failed, and I had to install the kernel-devel package in order for it to work correctly
+
+# if neededsu
+sudo yum install kernel-devel
+ 
+# make sure kernel headers match kernel version
+sudo yum update
+ 
+sudo sh VBoxLinuxAdditions.run --nox11
+cd /opt
+sudo rm *.iso
+Exit out of vagrant ssh, reload vagrant and it should be working correctly.
+
+4) fare in modo che le macchine comunicano con 
+ finally figured it out. Apparently, you just set the IP address to be in the same subnet and then add then follow virtualbox__intnet: true setting per https://www.vagrantup.com/docs/virtualbox/networking.html
+
+# Master
+master.vm.network "private_network", ip: "192.168.50.100",
+  virtualbox__intnet: true
+
+# Node
+nodeone.vm.network "private_network", ip: "192.168.50.110",
+  virtualbox__intnet: true
+
+
+
+Nano is a popular, user-friendly text editor for Linux which runs in console mode, without the need of an X server. By default, Nano comes with syntax highlighting for programming languages disabled, however it provides default rules for several languages like Perl, Python or C, among others. These highlighting definitions are kept inside the /usr/share/nano/ directory, and a file with rules corresponds to each language.
+
+For example, ls /usr/share/nano/ will show the following output on my system, which has Nano 2.0.7 installed:
+debian$ ls /usr/share/nano/
+asm.nanorc    java.nanorc    patch.nanorc   ruby.nanorc
+c.nanorc      man.nanorc     perl.nanorc    sh.nanorc
+groff.nanorc  mutt.nanorc    pov.nanorc     tex.nanorc
+html.nanorc   nanorc.nanorc  python.nanorc  nano-menu.xpm
+In order to enable syntax highlighting in Nano based on one of these files, edit the ~/.nanorc file (or create it if it doesn't exist), where ~ is your home directory, and add lines like this:
+include "/usr/share/nano/c.nanorc"
+include "/usr/share/nano/perl.nanorc"
+include "/usr/share/nano/sh.nanorc"
+These three lines will include the files c.nanorc, perl.nanorc and sh.nanorc, which will define highlighting rules for C, Perl and Bash respectively. This can also be accomplished by copying the contents of one file directory into ~/.nanorc. For example:
+cat /usr/share/nano/c.nanorc >> ~/.nanorc
+This will append the contents of /usr/share/nano/c.nanorc at the end of ~/.nanorc. You can also search on Google for other rules, which fit better with your taste (e.g. provide different colors or are more precise).
+va
+
+Install Midnight Commander (mc) On Centos / RHEL / Fedora Linux
+Open the Terminal or login to remote server using ssh client. Type the following yum command to install mc:
+# yum install mc
+
+
+
+
+
+Install Git Bash
+Install ConEmu
+Open ConEmu, in settings (top right corner), click "settings"
+In the settings tree, open "startup", then "tasks"
+Add a new task, or edit one of the existing ones
+click on the "tab" button in second row from bottom
+in the first box, enter "[git directory]\bin\sh.exe --login -s"
+in the second box, enter your preferred startup directory
+save
+now assign a hotkey (top right corner) (I have mine on ctrl+T)
