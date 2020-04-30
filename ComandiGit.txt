@@ -30,8 +30,11 @@ $ git log -1 // mostra solo l'ultimo
 // se cambi il file e poi 
 $ git add nomeFile.txt
  
+// per aggiungere tutti fai 
+$ git add --all
 $ git status // ti dice non ancora commitato
- 
+$ git commit -am "messaggio di commit"
+
 // ora git diff  NON ti da nulla!!
 // Perchè non cì sono differenxe tra il file in lavorazione e quello in stage!!
 // ma facendo 
