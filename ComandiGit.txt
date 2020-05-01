@@ -101,7 +101,13 @@ we've looked at:
 -p or --patch - this the default, but if --stat is used, the patch won't display, so pass -p to add it again
 -w - to ignore changes to whitespace
 
+The git add command is used to move files from the Working Directory to the Staging Index.
 
+$ git add <file1> <file2> … <fileN>
+
+This command takes a space-separated list of file names
+alternatively, the period . can be used to tell Git to add the current directory
+ (and all nested files)
 // per aggiungere tutti fai 
 $ git add --all
 $ git status // ti dice non ancora commitato
