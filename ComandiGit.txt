@@ -26,10 +26,82 @@ gitk --all // interfaccia grafica carina e funzionante
 
 $ git log // mostra tutti i log
 $ git log -1 // mostra solo l'ultimo
+$ git log --stat // molto utile da lista commit con 
+				 // parti file cambiate
+Viewing Changes
+git log show commits 
+the --stat flag what files were modified and how many lines of code 
+we could see exactly changes 
+Being able to see exact changes made to a file important
+example in the blog project the commit a3dc99a 
+ message "center content on page" and modifies the CSS file 
+ by adding 5 lines. 
+ What are those five lines that were added? 
+ How can we figure out what those 5 lines are?
+recap of the git log -p output:
 
+ the file that is being displayed
+ - the hash of first second version of the file
+not usually important, so it's safe to ignore
+- the old version and current version of the file
+- the lines where the file is added and how many lines there are
+	-15,83 indicates that the old version (represented by the -) sta	rted at line 15 and that the file had 83 lines
+	+15,85 indicates that the current version (represented by the +) starts at line 15 and that there are now 85 lines...these 85 lines are shown in the patch below
+- the actual changes made in the commit
+lines red and with a minus (-) were original version removed by the commit
+lines green with a plus (+) are new lines in the commit
+
+// git log -p --stat 
+display stats info above the patch info.
+order doesn't matter git log --stat -p also show the stats 
+info above the patch info.
+git log -p -w show the patch information but not highlight 
+	only whitespace changes have occurred.
 // se cambi il file e poi 
 $ git add nomeFile.txt
  
+ Too Much Scrolling
+scrolling and scrolling  patch output to the right 
+be super handy display a specific commit's 
+
+There are actually two ways to do this!
+-providing the SHA of the commit you want to see to git log
+-use a new command git show
+You already know how to "log" information with:
+
+git log
+git log --oneline
+git log --stat
+git log -p
+But you can supply the SHA of a commit as ARGUMENT FOR ALL THIS COMMAND
+ $ git log -p fdf5493
+ MOSTRA TUTTI A PARTIRE DAL LOG CON QUELLA FIRMA
+ 
+** New Command: git show
+shows a specific commit 
+
+$ git show
+will  display the most recent commit. 
+Typically, a SHA is provided as a final argument:
+
+$ git show fdf5493
+What does git show do?
+The git show command will show only one commit. 
+The output of the git show is the same as the git log -p command. 
+So by default, git show displays:
+the commit
+the author
+the date
+the commit message
+the patch information
+However, git show can be combined with most of the other flags 
+we've looked at:
+
+--stat - to show the how many files were changed and the number of lines that were added/removed
+-p or --patch - this the default, but if --stat is used, the patch won't display, so pass -p to add it again
+-w - to ignore changes to whitespace
+
+
 // per aggiungere tutti fai 
 $ git add --all
 $ git status // ti dice non ancora commitato
