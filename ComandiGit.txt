@@ -205,8 +205,8 @@ $ git remote add origin "https://github.com/amunnezza/TextFile.git"   // LEGGERE
 // CREATO UN ALIAS origin per l'url scritto
 // se faccio 
 & git remote -v // mi da l'url del repository remoto
-// a questo punto posso FARE IL PUSH DEL REPOSITORY
-$ git push origin master  // da dovE? origin che è un alias Che cosa? il branch master
+// a questo punto posso FARE IL PUSH DEL REPOSITORY dal locale verso remoto 
+$ git push origin master  // verso  dovE? origin che è un alias Che cosa? il branch master
 
 //rimane da vedere clone di un repository
 // CHIARAMENTE OTTIMA IDEA FARE IN UN ALTRA DIRECTORY
