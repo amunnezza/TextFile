@@ -117,6 +117,7 @@ $ git diff --staged   // mostra differenze tra file staged e quello gia committa
 
 FINORA FATTO FONDAZIONI CON 	
 git init // inizializzare 
+
 AGGIUNGERE FILE ALLO STAGING
 The git add command is used to move files from the Working Directory to the Staging Index.
 
@@ -130,6 +131,92 @@ $ git add --all
 $ git add . // aggiunge tutto anche directory e sotto directory
 $ git status // ti dice non ancora commitato
 $ git commit -am "messaggio di commit"
+
+	COMMIT 
+$ git commit // tutto quello in staging viene messo in commit
+			// lanci8a editor di default per creare un commit 
+			// sospende fino a quando non chiuyde editor
+$ git commit -m "per piccoli messaggi usa l'opzione -m"
+	
+		WHAT INCLUDE IN COMMIT	
+What To Include In A Commit
+ what you should include in a commit and when/how often you should make commits?
+- Each commit has a single focus. 
+- Each commit should record a single-unit change. 
+- Now this can be a bit subjective (which is totally fine), but each commit should make 
+  a change to just one aspect of the project.
+- Now this isn't limiting the number of lines of code that are added/removed or the number 
+  of files that are added/removed/modified. 
+  
+  Conversely, a commit shouldn't include unrelated changes - 
+changes to the sidebar and rewording content in the footer. 
+These two aren't related to each other and shouldn't be included in the same commit. 
+Work on one change first, commit that, and then change the second one. 
+That way, if it turns out that one change had a bug and you have to undo it, 
+you don't have to undo the other change too.
+
+The best way that I've found to think about what should be in a commit is to think, 
+"What if all changes introduced in this commit were erased?". 
+If a commit were erased, it should only remove one thing.
+
+Don't worry, commits don't get randomly erased.
+
+In a later lesson, we'll look at using Git to undo changes made in commits and how to manually, 
+carefully remove the last commit that was made.
+
+		COMMENTI AL COMMIT
+Leggere https://chris.beams.io/posts/git-commit/
+e anche file "Udacity Nanodegree Style Guide.html"
+
+Do
+do keep the message short (less than 60-ish characters)
+do explain what the commit does (not how or why!)
+
+Do not
+do not explain why the changes are made (more on this below)
+do not explain how the changes are made (that's what git log -p is for!)
+do not use the word "and"
+
+*to use "and" ----> your commit is probably doing too many changes - break the changes into separate commits
+However, you finish that phrase, use that as your commit message.
+		
+Explain the Why
+If you need to explain why a commit needs to be made, you can!
+When you're writing the commit message, the first line is the message itself. 
+After the message, leave a blank line, and then type out the body or explanation 
+including details about why the commit is needed (e.g. URL links).
+
+Here's what a commit message edit screen might look like:
+add a new image to the project files
+alter the HTML
+add/modify CSS to incorporate the new image
+A commit that records all of these changes would be totally fine!
+
+------------------------------------/
+
+	HAVING GIT IGNORE FILE TO COMMIT
+
+Use .gitignore (in same dir of .git/)
+List the file to be ignored
+Can use special Character (GLOBBING)
+Globbing lets you use special characters to match patterns/characters. In the .gitignore file, you can use the following:
+
+blank lines can be used for spacing
+# - marks line as a comment
+* - matches 0 or more characters
+? - matches 1 character
+[abc] - matches a, b, _or_ c
+
+** - matches nested directories - 
+E.G. a/**/z matches
+- a/z
+- a/b/z
+- a/b/c/z
+
+So if all of the 50 images are JPEG images in the "samples" folder, we could 
+add to .gitignore to have Git ignore all 50 images.
+
+samples/*.jpg
 
 
 git diff "hash del commit che mi interessa"
