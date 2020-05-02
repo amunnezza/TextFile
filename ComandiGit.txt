@@ -2,16 +2,17 @@ innanzitutto entra in una directory e fai
 git init // crea un repository
 ls -A // mostra tutti i file che git crea
 
-
+CONFIGURAZIONE INIZIALE
 git help NomeComando
 
 git config --global user.name "Nome da usare"
 
 git config --global user.email "mail@daUsare.com" // quella che usi su git-hub.com
 
-touch nomefile.txt    // per creare un nuovo file
-
 git config --global core.editor notepad++  // per decidere quale editor usare
+
+PRIMI ESEMPI 
+touch nomefile.txt    // per creare un nuovo file
 
 git status   //  mostra se ci sono delle cose aggiunte ma non ancora prese in considerazione
 
@@ -20,16 +21,18 @@ git add NomeFile.txt // dice di fare Track del NomeFile.txt
 //nota bene tra modifica del file e il comnado git add nomeFile.txt posso fare
 git diff   // mi dice quale è la differenza rispetto a quello gia in stage o in commit
 
-
 nota bene la gestione dei commit puoi farla 
 gitk --all // interfaccia grafica carina e funzionante
 
+OSSERVARE CAMBIAMENTI
 $ git log // mostra tutti i log
+
 $ git log -1 // mostra solo l'ultimo
 $ git log --stat // molto utile da lista commit con 
 				 // parti file cambiate
-Viewing Changes
-git log show commits 
+
+osservare commits 
+
 the --stat flag what files were modified and how many lines of code 
 we could see exactly changes 
 Being able to see exact changes made to a file important
@@ -38,6 +41,7 @@ example in the blog project the commit a3dc99a
  by adding 5 lines. 
  What are those five lines that were added? 
  How can we figure out what those 5 lines are?
+
 recap of the git log -p output:
 
  the file that is being displayed
@@ -45,8 +49,9 @@ recap of the git log -p output:
 not usually important, so it's safe to ignore
 - the old version and current version of the file
 - the lines where the file is added and how many lines there are
-	-15,83 indicates that the old version (represented by the -) sta	rted at line 15 and that the file had 83 lines
-	+15,85 indicates that the current version (represented by the +) starts at line 15 and that there are now 85 lines...these 85 lines are shown in the patch below
+	-15,83 indicates that the old version (represented by the -) started at line 15 and that the file had 83 lines
+	+15,85 indicates that the current version (represented by the +) starts at line 15 and that there are now 85 lines...
+	  these 85 lines are shown in the patch below
 - the actual changes made in the commit
 lines red and with a minus (-) were original version removed by the commit
 lines green with a plus (+) are new lines in the commit
@@ -60,7 +65,7 @@ git log -p -w show the patch information but not highlight
 // se cambi il file e poi 
 $ git add nomeFile.txt
  
- Too Much Scrolling
+	Too Much Scrolling
 scrolling and scrolling  patch output to the right 
 be super handy display a specific commit's 
 
@@ -73,6 +78,7 @@ git log
 git log --oneline
 git log --stat
 git log -p
+
 But you can supply the SHA of a commit as ARGUMENT FOR ALL THIS COMMAND
  $ git log -p fdf5493
  MOSTRA TUTTI A PARTIRE DAL LOG CON QUELLA FIRMA
@@ -85,6 +91,7 @@ will  display the most recent commit.
 Typically, a SHA is provided as a final argument:
 
 $ git show fdf5493
+
 What does git show do?
 The git show command will show only one commit. 
 The output of the git show is the same as the git log -p command. 
@@ -101,6 +108,16 @@ we've looked at:
 -p or --patch - this the default, but if --stat is used, the patch won't display, so pass -p to add it again
 -w - to ignore changes to whitespace
 
+// ora git diff  NON ti da nulla!!
+// Perchè non cì sono differenxe tra il file in lavorazione e quello in stage!!
+// ma facendo 
+$ git diff --staged   // mostra differenze tra file staged e quello gia committato
+
+// nota bene posso vedere differenze tra i vari commit 
+
+FINORA FATTO FONDAZIONI CON 	
+git init // inizializzare 
+AGGIUNGERE FILE ALLO STAGING
 The git add command is used to move files from the Working Directory to the Staging Index.
 
 $ git add <file1> <file2> … <fileN>
@@ -110,16 +127,11 @@ alternatively, the period . can be used to tell Git to add the current directory
  (and all nested files)
 // per aggiungere tutti fai 
 $ git add --all
+$ git add . // aggiunge tutto anche directory e sotto directory
 $ git status // ti dice non ancora commitato
 $ git commit -am "messaggio di commit"
 
-// ora git diff  NON ti da nulla!!
-// Perchè non cì sono differenxe tra il file in lavorazione e quello in stage!!
-// ma facendo 
-$ git diff --staged   // mostra differenze tra file staged e quello gia committato
 
-// nota bene posso vedere differenze tra i vari commit 
-CON IL COMANDO
 git diff "hash del commit che mi interessa"
 PER FARLO USO IL CONCETTO DI "HEAD" CHE SI VEDE NEL git log . 	HEAD E' L'ULTIMO COMMIT VALIDO E PER 
 TORNARE AD UNO STADIO PRECEDENTE PUOI FARE 	
@@ -197,8 +209,8 @@ $ git remote add origin "https://github.com/amunnezza/TextFile.git"   // LEGGERE
 // CREATO UN ALIAS origin per l'url scritto
 // se faccio 
 & git remote -v // mi da l'url del repository remoto
-// a questo punto posso FARE IL PUSH DEL REPOSITORY
-$ git push origin master  // da dovE? origin che è un alias Che cosa? il branch master
+// a questo punto posso FARE IL PUSH DEL REPOSITORY dal locale verso remoto 
+$ git push origin master  // verso  dovE? origin che è un alias Che cosa? il branch master
 
 //rimane da vedere clone di un repository
 // CHIARAMENTE OTTIMA IDEA FARE IN UN ALTRA DIRECTORY
