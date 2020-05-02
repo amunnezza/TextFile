@@ -144,6 +144,10 @@ git reset HEAD~1   // il file cambiato sbagliato rimane in staging
 git reset HEAD~1 --mixed // il file cambiato viene tolto dallo staging ma le modifiche rimandono sul file sys
 git reset HEAD~1 --hard // come mixed ma cambia anche il file sul file sys
 
+TAG 
+Is an extra label
+
+
 BRANCH
 	Creiamo due ulteriori branch uno per dairy e l'altro per meat
 	IL VANTAGGIO EVIDENTE E CHE POSSO AVERE DUE TEAM CHE LAVORANO SU PARTI DIVERSE ANCHE DELLO STESSO FILE 
