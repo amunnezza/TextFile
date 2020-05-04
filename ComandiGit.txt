@@ -23,7 +23,7 @@ git diff   // mi dice quale è la differenza rispetto a quello gia in stage o in
 
 nota bene la gestione dei commit puoi farla 
 gitk --all // interfaccia grafica carina e funzionante
-
+---------------------------------------
 OSSERVARE CAMBIAMENTI
 $ git log // mostra tutti i log
 
@@ -108,57 +108,56 @@ we've looked at:
 -p or --patch - this the default, but if --stat is used, the patch won't display, so pass -p to add it again
 -w - to ignore changes to whitespace
 
-// ora git diff  NON ti da nulla!!
-// Perchè non cì sono differenxe tra il file in lavorazione e quello in stage!!
-// ma facendo 
+
 $ git diff --staged   // mostra differenze tra file staged e quello gia committato
 
 // nota bene posso vedere differenze tra i vari commit 
 
-FINORA FATTO FONDAZIONI CON 	
-git init // inizializzare 
+LEZIONE 4 - ADD A COMMIT TO A REPOSITORY
 
-AGGIUNGERE FILE ALLO STAGING
+	AGGIUNGERE FILE ALLO STAGING
 The git add command is used to move files from the Working Directory to the Staging Index.
 
 $ git add <file1> <file2> … <fileN>
 
 This command takes a space-separated list of file names
-alternatively, the period . can be used to tell Git to add the current directory
- (and all nested files)
-// per aggiungere tutti fai 
+
+// alternatively, per aggiungere tutti fai 
 $ git add --all
 $ git add . // aggiunge tutto anche directory e sotto directory
 $ git status // ti dice non ancora commitato
-$ git commit -am "messaggio di commit"
+$ git commit -am "messaggio di commit"   //ADD EVERYTING AND DO COMMIT TOO
+
+NB. Errore in staging risolvibile con
+git rm --cached <file to unstage>
+
 
 	COMMIT 
 $ git commit // tutto quello in staging viene messo in commit
-			// lanci8a editor di default per creare un commit 
+			// lancia editor di default per creare un commit 
 			// sospende fino a quando non chiuyde editor
 $ git commit -m "per piccoli messaggi usa l'opzione -m"
 	
 		WHAT INCLUDE IN COMMIT	
 What To Include In A Commit
  what you should include in a commit and when/how often you should make commits?
-- Each commit has a single focus. 
-- Each commit should record a single-unit change. 
-- Now this can be a bit subjective (which is totally fine), but each commit should make 
-  a change to just one aspect of the project.
-- Now this isn't limiting the number of lines of code that are added/removed or the number 
-  of files that are added/removed/modified. 
+	- Each commit has a single focus. 
+	- Each commit should record a single-unit change. 
+	- Now this can be a bit subjective (which is totally fine), but each commit should make 
+	  a change to just one aspect of the project.
+	- Now this isn't limiting the number of lines of code that are added/removed or the number 
+	  of files that are added/removed/modified. 
   
   Conversely, a commit shouldn't include unrelated changes - 
-changes to the sidebar and rewording content in the footer. 
-These two aren't related to each other and shouldn't be included in the same commit. 
-Work on one change first, commit that, and then change the second one. 
-That way, if it turns out that one change had a bug and you have to undo it, 
-you don't have to undo the other change too.
+ES. changes to the sidebar and rewording content in the footer. 
+	These two aren't related to each other and shouldn't be included in the same commit. 
+	Work on one change first, commit that, and then change the second one. 
+	That way, if it turns out that one change had a bug and you have to undo it, 
+	you don't have to undo the other change too.
 
 The best way that I've found to think about what should be in a commit is to think, 
 "What if all changes introduced in this commit were erased?". 
 If a commit were erased, it should only remove one thing.
-
 Don't worry, commits don't get randomly erased.
 
 In a later lesson, we'll look at using Git to undo changes made in commits and how to manually, 
@@ -192,7 +191,7 @@ alter the HTML
 add/modify CSS to incorporate the new image
 A commit that records all of these changes would be totally fine!
 
-------------------------------------/
+-----------------------------------/
 
 	HAVING GIT IGNORE FILE TO COMMIT
 
@@ -218,6 +217,7 @@ add to .gitignore to have Git ignore all 50 images.
 
 samples/*.jpg
 
+____________________-------------------------------__________________
 
 git diff "hash del commit che mi interessa"
 PER FARLO USO IL CONCETTO DI "HEAD" CHE SI VEDE NEL git log . 	HEAD E' L'ULTIMO COMMIT VALIDO E PER 
