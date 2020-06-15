@@ -1,0 +1,80 @@
+How to Use BINs on Any Site.
+Read If you’re New to this BIN Stuff.
+
+So a lot of people asking me about how to use BIN and what is BIN. so I am gonna just explain it short.
+
+BIN – Bank Identification Number, which specifies the bank, and in most cases its first 6 digits of your Credit/Debit Card.
+
+How to make credit cards from BIN? Well, there are scripts to make cards which perform different algorithm just like Banks to get the correct number that a credit/debit card must-have.
+
+Just Paste The BIN(in the BIN box) and click on Generate Cards on The Site 201
+
+I am telling you that there is no need to check for live cards, if the BIN is said to be working on Any Site then just Generate Cards!! No Need to Check lives
+
+After Generating Some Cards, Just Use Them On the Site.
+
+If you’ve Provided some information Like –
+
+BIN NETFLIX DIRECT
+BIN- 46969696xxxxxxxx
+IP – USA
+
+So Just copy the BIN provided and create at least 1 card and copy it!!
+Now connect to some premium VPN which Provides USA counties IP. You can use sock5 too (if you know about them, not gonna clear them in this one)
+
+Now after Generating a card and connecting to Shithole IP, you’re ready to Go.
+Just Open the given site create an account (use temp mail) and forward to the payment pages and Provide any fake detail (if it isn’t provided already and you’re asked to it) Enter The details of the Card and You’re Good to Go.
+
+Can We Use the BIN/card for Amazon Physical Carding or cash out stuff?
+
+Well, I am going here to be a real chief, You can not with the knowledge you’ve, for now, So don’t come to me and ask this shit it’s really ahead burner.
+
+The last thing you must remember, Websites Patch the BINs when they see a lot of a number of same cards series are using for the trials, So they become Dead soon.
+Mostly Netflix Gets patched in some hours/hour as they’ve patched the BIN thing already and their automated shit script do it real soon, so don’t complain about Netflix Not working Give me Netflix Account :3
+
+Now you have learnt How to Use Bins. Now I will explain how to create Bins
+
+How to Create Bins.
+Before we start we should know one thing, there are two types of trial CC Verification in Premium Accounts trial.
+First one is Validity Check Trial.
+-> This type of trial just checks CC EXP CVV Validation and starts your trial
+-> Very Very easy to bypass their verification
+-> Eg. Tidal
+
+The second one is the Authorisation Hold trial.
+-> This type of trial makes an authorisation hold on the card for 1 USD.
+-> It also has a verification system to verify cardholder name if the card is VBV.
+-> Eg. Netflix
+For Finding a bin you need the following things Needed before starting Work
+=> Hardworking
+=> Patience
+=> CC Generator
+=> CC Checker
+=> Good Internet connection
+=> VPN (Premium)
+
+Now if you want to find a bin for the second type of Premium Accounts you should follow the following:-
+Step 1: Go to Country/BANK to BIN websites like
+Ex: https://www.bincodes.com/bin-search 195
+Step 2: Choose Any Country you want (Mainly Low secured countries like OMAN, UAE and etc)
+Step 3: Choose Small Banks (They are less secured)
+Step 4: Choose one BIN of Debit card (not credit)
+Step 5: Generate CC with it
+Step 6: Check with it
+Step 7: Get lives one
+Step 8: Test it
+Step 9: Start from Step 2 again till you get working one
+
+For type 1 Trials:
+
+Choose USA, CAPITAL ONE Mastercards.
+
+Choose one BIN of Debit level card (not credit)
+Generate CC with it
+Check with it
+Get lives one
+Test it
+Do Again and again till you get working one :slightly_smiling_face:
+Don’t forget to change your IP to the CC Countries IP.
+
+Source: thetechrim
