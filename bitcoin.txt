@@ -1,14 +1,11 @@
-Visti tutti i nuovi arrivati, mi spertico in un post per spiegare cos'√® Bitcoin, 
-nella speranza che sia utile per loro.
+Visti tutti i nuovi arrivati, mi spertico in un post per spiegare cos'Ë Bitcoin, nella speranza che sia utile per loro.
 Prima di parlare di Bitcoin vale la pena menzionare il problema che risolve. 
 Come si garantisce il fatto che un soldo non sia spendibile due volte?
-Nella storia dell'umanit√† questo problema √® stato risolto in 2 modi:
-1) i soldi sono costituiti da qualcosa di fisico, una moneta, una banconota, difficile da copiare e 
-pertanto una volta trasferito il soldo non appartiene pi√π alla persona che lo ha speso;
-2) nel mondo digitale il primo metodo fallisce per la facilita di copia dei dati
- (i soldi sono un numero in un database) e dunque come si fa? 
-Si mette in mezzo un fiduciario che garantisce la regolarit√† delle transazioni: la banca.
-Di fatto nessuno nel mondo digitale oggi pu√≤ pi√π spendere i soldi, sono solo gli intermediari 
+Nella storia dell'umanit‡† questo problema Ë stato risolto in 2 modi:
+1) i soldi sono costituiti da qualcosa di fisico, una moneta, una banconota, difficile da copiare e pertanto una volta trasferito il soldo non appartiene pi˘ alla persona che lo ha speso;
+2) nel mondo digitale il primo metodo fallisce per la facilita di copia dei dati  (i soldi sono un numero in un database) e dunque come si fa? 
+Si mette in mezzo un fiduciario che garantisce la regolarit‡† delle transazioni: la banca.
+Di fatto nessuno nel mondo digitale oggi puÚ pi˘ spendere i soldi, sono solo gli intermediari 
 a permettere gli acquisti perch√® dipendiamo da loro per la catena di fiducia.
 Satoshi Nakamoto ha risolto questo problema in un terzo modo: Bitcoin (e per questo √® un genio).
 Che dice Satoshi? Dice: facciamo un registro pubblico, dove chiunque possa andare a scrivere 
